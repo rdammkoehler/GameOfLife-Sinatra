@@ -1,3 +1,9 @@
 Welcome to Conway's Game Of Life with Ruby, Sinatra and JavaScriptMVC.
 
 Please note that all dependancies *except* Sinatra and Ruby are present here.
+
+After you pull from the repository you'll want to do the following;
+
+1) Install the Sintatr gem if you haven't already (gem install sinatra)
+2) Execute 'ruby gol.rb' to run the server side
+3) Visit http://localhost:4567/gameoflifeweb.html to play.
