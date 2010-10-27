@@ -7,23 +7,18 @@ $.Model.extend('Game',
 			url: '/state',
 			dataType: 'json',
 			success: this.callback(['wrapMany',success]),
-			error: error
 		})
 	},
 	set : function(x,y, success, error){
 		$.ajax({
 			async: false,
-			url: '/set/'+x+'/'+y,
-			success: this.callback(['wrapMany',success]),
-			error: error
+			url: '/set/'+x+'/'+y
 		})
 	},
 	clear : function(x,y, success, error){
 		$.ajax({
 			async: false,
-			url: '/clear/'+x+'/'+y,
-			success: this.callback(['wrapMany',success]),
-			error: error
+			url: '/clear/'+x+'/'+y
 		})
 	},
 	step : function(success, error){
@@ -32,7 +27,6 @@ $.Model.extend('Game',
 			url: '/step',
 			dataType: 'json',
 			success: this.callback(['wrapMany',success]),
-			error: error
 		})
 	},
 	click : function(x,y,state){

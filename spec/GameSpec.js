@@ -25,4 +25,15 @@ describe("Game", function() {
 		game.click(2,2,"1");
 		expect(url).toBe("/clear/2/2");
 	});
+	
+	it("should call state when state is requested", function() {
+		game.state();
+		expect(url).toBe("/state");
+	});
+	
+	it("should call step when step is requested", function() {
+		game.step();
+		expect(url).toBe("/step");
+	});
+	
 })
