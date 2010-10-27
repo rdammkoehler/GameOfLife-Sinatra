@@ -1,0 +1,10 @@
+body {font-family: verdana}
+.error {border: solid 1px red;}
+.error_text { color: red; font-size: 10px;}
+td {padding: 3px;}
+.redcell {background-color: red; color: red;}
+.blackcell {background-color: black; color: black;}
+a:link {text-decoration:none; color: black;}
+a:visited {text-decoration:none; color: black;}
+a:active {text-decoration:none; color: black;}
+a:hover {text-decoration:none; color: black;}

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<title>Conway's Game Of Life</title>
+		<link rel="stylesheet" href="gameoflifeweb.css">
+		<link rel="shortcut icon" href="/images/glider.gif" type="image/x-icon" />
+	</head>
+	<body>
+	    <h1>Welcome to <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life" target="gol">Conway's Game Of Life</a></h1>
+		<ul>Here are the Rules.
+			<li>Any live cell with fewer than two live neighbours dies, as if caused by under-population</li>
+			<li>Any live cell with more than three live neighbours dies, as if by overcrowding</li>
+			<li>Any live cell with two or three live neighbours lives on to the next generation</li>
+			<li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction</li>
+		</ul>
+		<br>
+		Just click on any cell on the board to change it's state from alive (red) to dead (black) or back. Then click the 'Step'
+		button at the bottom of the game board to execute the rules and see the next board.</br>
+		<div id="game"></div>
+		<hr width="50%">
+		<div>
+			Your frontend services are brought to you by JavaScript <a href="http://en.wikipedia.org/wiki/JavaScript"><img height="25" src="images/jmvc-logo.png"></a><br>
+			Your backend services are brought to you by <a href="http://www.sinatrarb.com/"><img height="50" src="images/sinatra-logo.gif"><tt>Sinatra</tt></a> and <a href="http://www.ruby-lang.org/"><img height="50" src="images/ruby-logo.gif"></a>
+		</div>
+	</body>
+	<script type='text/javascript' 
+		src='jmvc/include.js?gameoflifeweb,development'>   
+	</script>
+</html>

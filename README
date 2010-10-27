@@ -1,0 +1,3 @@
+Welcome to Conway's Game Of Life with Ruby, Sinatra and JavaScriptMVC.
+
+Please note that all dependancies *except* Sinatra and Ruby are present here.

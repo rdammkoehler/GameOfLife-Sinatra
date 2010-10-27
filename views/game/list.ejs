@@ -1,0 +1,12 @@
+<%
+for(var i = 0; i < game.length; i++) {
+	%><tr><%
+		var l = 5; //TODO why can't I call length on game[i]
+		for(var j = 0; j < l; j++) {
+			%><td width="100" height="100" vspace="middle" align="center" class="<% if (0 < game[i][j]) { %>redcell<% } else { %>blackcell<% }%> cell" x="<%= i%>" y="<%= j%>" onmouseover="this.style.cursor='hand'"><%
+				%><%= game[i][j]%><%
+			%></td><%
+		}
+	%></tr><%
+}
+%>
